@@ -1,0 +1,17 @@
+h1{
+    color: rgb(0, 0, 0);
+}
+
+.verde-oscuro{
+    background-color: rgb(3, 171, 3);
+}
+
+.contenedor{
+    display: flex ;
+    /* height:230px ; */
+    height:230px 
+}
+.img{
+    height: 100%;
+    width: 800px;
+}

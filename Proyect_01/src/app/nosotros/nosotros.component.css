@@ -1,0 +1,13 @@
+.contenedor{
+    display: flex;
+    margin: 25px;
+}
+
+.card{
+    margin: 5px;
+}
+
+img{
+    height: 180px;
+    width: 200px;
+}
