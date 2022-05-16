@@ -13,9 +13,13 @@ import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormularioreactivoComponent } from './formularioreactivo/formularioreactivo.component';
+import { ContenidoIndexComponent } from './components/contenido-index/contenido-index.component';
+
 
 //manejo de rutas 
 const routes: Routes= [
+
+  {path:'contenidoIndexComponent',component:ContenidoIndexComponent},
   {path:'formularioreactivo',component:FormularioreactivoComponent},
   {path:'contacto',component:ContactoComponent},
   {path:'nosotros',component:NosotrosComponent},
@@ -30,7 +34,8 @@ const routes: Routes= [
     CuerpoComponent,
     ContactoComponent,
     NosotrosComponent,
-    FormularioreactivoComponent
+    FormularioreactivoComponent,
+    ContenidoIndexComponent
   ],
   imports: [
     BrowserModule,

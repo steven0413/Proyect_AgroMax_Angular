@@ -18,5 +18,9 @@ export class FormularioreactivoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onSubmit() {
+    
+    console.log(this.contacForm.value);
+  }
 
 }
