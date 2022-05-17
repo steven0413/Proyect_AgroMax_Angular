@@ -2,6 +2,7 @@ import {Routes,RouterModule} from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormularioreactivoComponent } from './formularioreactivo/formularioreactivo.component';
 import { ContenidoIndexComponent } from './components/contenido-index/contenido-index.component';
+import { JsonComponent } from './json/json.component';
 
 
 //manejo de rutas 
@@ -35,14 +37,17 @@ const routes: Routes= [
     ContactoComponent,
     NosotrosComponent,
     FormularioreactivoComponent,
-    ContenidoIndexComponent
+    ContenidoIndexComponent,
+    JsonComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
    
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

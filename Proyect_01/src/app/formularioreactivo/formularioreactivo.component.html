@@ -2,14 +2,15 @@
 
     <label for="first-name">Nombre: </label>
     <input id="first-name" type="text" formControlName="firstName" class="form-control">
-  
+   
+
     <label for="last-name">Apellido: </label>
     <input id="last-name" type="text" formControlName="lastName" class="form-control">
 
     <label for="email">Correo Electronico : </label>
     <input id="email" type="email" formControlName="email" class="form-control">
-
+   
     <p>Complete el formulario para activar el boton  </p>
     <button type="submit" [disabled]="!contacForm.valid" class="btn btn-sucess">Enviar</button>
-  
+    
   </form>

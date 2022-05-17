@@ -9,8 +9,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 export class FormularioreactivoComponent implements OnInit {
     contacForm = new FormGroup({
-    firstName: new FormControl('',Validators.required),
-    lastName: new FormControl(''),
+    firstName: new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]+$')]),
+    lastName: new FormControl('',[Validators.required,Validators.minLength(3)]),
     email: new FormControl('',[Validators.required, Validators.email])
   });
 
@@ -22,5 +22,6 @@ export class FormularioreactivoComponent implements OnInit {
     
     console.log(this.contacForm.value);
   }
+
 
 }
