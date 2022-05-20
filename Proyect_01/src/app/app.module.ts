@@ -16,6 +16,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormularioreactivoComponent } from './formularioreactivo/formularioreactivo.component';
 import { ContenidoIndexComponent } from './components/contenido-index/contenido-index.component';
 import { JsonComponent } from './json/json.component';
+import { ProyectfirebaseangularComponent } from './proyectfirebaseangular/proyectfirebaseangular.component';
 
 
 //manejo de rutas 
@@ -38,7 +39,8 @@ const routes: Routes= [
     NosotrosComponent,
     FormularioreactivoComponent,
     ContenidoIndexComponent,
-    JsonComponent
+    JsonComponent,
+    ProyectfirebaseangularComponent
   ],
   imports: [
     BrowserModule,
